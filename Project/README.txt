@@ -1,21 +1,21 @@
 #Authors: Lanyu Shang; Minqing Zhuang; Xing Cui
 #GS-DS-1007 Final Project
-#Fall 2015
+#12/15/2015
 #Instructor: Gregory R Watson
 
 
 This is the instruction of our FINAL project for DS 1007, the Programming for Data Science.
 Our project is going to let the user, who wants to open a restaurant with certain cuisine, know how other restaurants in this cuisine are.
 
-1. Data is directly extracted from yelp.com by using BeautifulSoup within two separate python files. They are located in a folder named "data" at the top level.
+1. Data is directly extracted from yelp.com by using BeautifulSoup within two separate python files. They are located in a folder named “Data" at the top level.
 	a. "get_business_link_Yelp.py" is helping us to get all links of all restaurants in Manhattan, and it is formatted in a .csv file.
 	b. "get_business_info_Yelp.py" is helping us to get all business information for all restaurant with orderred categories. Data is formatted into a .csv file as well, and the name of the file is data_Yelp.csv.
 
-2. "main" fucntion and other functions including "user_input", "MapVisualization", and "PlotVisualization" in the "final" folder. There are comments inside those .py files, which explained their usage in details.
+2. "main" fucntion and other functions including “UserChoice.py”, "MapVisualization.py”, and "PlotVisualization.py” in the “FoodiesFavorite” folder. There are comments inside those .py files, which explained their usage in details.
 
 3. The user guide is going to explain as the following:
 
-	A. $python Foodies_favorite.py 			to run the main program.
+	A. $python FoodiesFavorite.py 			to run the main program.
 
 	B. It will be loading data from data_Yelp.csv first.
 
@@ -34,9 +34,11 @@ Our project is going to let the user, who wants to open a restaurant with certai
 
 	H. The graphs are in two types. First, the user would see the first part is the map of Manhattan that colored by neighborhood categories. The rest graphs are about distributions of the selected cuisine and neighborhood.
 
-	I. $python test_*.py   		to run the unittest. * represents other files name that needs to be tested.
-
- 
+	I. Unittest
+		$python test_LoadData.py   
+		$python test_PlotVisualization.py	 
+		or
+		$python -m unittest discover
 
 
 
